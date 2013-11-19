@@ -1,5 +1,3 @@
 class Object
-  def is_an?(klass)
-    return self.is_a?(klass)
-  end
+  alias_method :is_an?, :is_a?
 end
